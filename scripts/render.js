@@ -18,7 +18,7 @@ function renderizaAcessorios(listaDeAcessorios) {
         title.innerText = acessorio.nome
 
         const description = document.createElement('p')
-        description.innertText = acessorio.descricao
+        description.innerText = acessorio.descricao
 
         container.append(title, description)
         li.append(img, container)
@@ -47,6 +47,6 @@ renderizaAcessorios(listaDeAcessorios)
 
 function procuraAcessorios(valorInputUser) {
     
-    const itemPeloNome = listaDeAcessorios.filter(item => item.nome.toLowerCase().includes(valorInputUser.toLowercase()))
+    const itemPeloNome = listaDeAcessorios.filter(item => item.nome.toLowerCase().includes(valorInputUser.toLowerCase()))
     return itemPeloNome;
 }
